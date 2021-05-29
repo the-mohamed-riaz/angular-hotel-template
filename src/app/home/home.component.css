@@ -1,11 +1,11 @@
 .bg-image {
-    background-image: url('../../assets/svg/summerBg.png');
+    background-image: url('../../assets/png/summer-hotel.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 .content {
@@ -20,4 +20,119 @@
     width: 40%;
     left: 5%;
     top: 20%;
+}
+
+.left-l {
+    position: relative;
+    bottom: 40.5%;
+    left: -0.5%;
+    width: 23%;
+    max-width: 400px;
+    animation: wobble 4s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.lady-anime {
+    position: relative;
+    width: 20%;
+    left: 41%;
+    bottom: 65%;
+    animation: float 3s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.lady-anime:hover {
+    animation: none
+}
+
+.umbrella {
+    position: relative;
+    max-width: 350px;
+    width: 22%;
+    bottom: 45%;
+    right: -40%;
+    animation: bounceIn 4s infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes wobble {
+    33% {
+        transform: translateX(-5px);
+    }
+    66% {
+        transform: translateX(5px);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: rotate(-3deg);
+    }
+    25% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(3deg);
+    }
+    100% {
+        transform: rotate(-3deg);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(1);
+        transform: rotate(0deg);
+        transform: translateX(-5px);
+    }
+    60% {
+        transform: scale(1.03);
+        transform: rotate(2deg);
+        transform: translateX(0px);
+    }
+    100% {
+        transform: scale(1);
+        transform: rotate(0deg);
+        transform: translateX(-5px);
+    }
+}
+
+
+/* Media queries */
+
+
+/* Phone - portrait mode */
+
+@media only screen and (max-width:320px) {
+    .bg-image {
+        width: 100%;
+        height: 100%;
+        overflow: hidden !important;
+    }
+    .quotes-position {
+        position: relative;
+        /* border: 1px solid chartreuse; */
+        width: 45%;
+        left: 5%;
+        top: 22%;
+        text-shadow: 2px 2px #a8a7a7;
+    }
+    .left-l {
+        position: relative;
+        bottom: -1.5rem;
+        left: -0.5%;
+    }
+    .lady-anime {
+        position: relative;
+        width: 30%;
+        left: 41%;
+        bottom: 3rem;
+    }
+    .umbrella {
+        position: relative;
+        max-width: 350px;
+        width: 25%;
+        bottom: -1rem;
+        right: -30%;
+    }
 }
