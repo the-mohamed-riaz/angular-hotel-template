@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('bootstrap/dist/css/bootstrap.css');
+.nav--bar {
+    position: absolute;
+    width: 100%;
+    top: 2rem;
+}
+
+.theme-font {
+    font-family: 'Pattaya', sans-serif;
+}
+
+.white {
+    color: #fff;
+}

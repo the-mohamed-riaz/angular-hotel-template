@@ -1,0 +1,79 @@
+    .logo {
+        max-width: 48px;
+    }
+    
+    .search-icon {
+        font-size: 20px;
+        font-weight: 600;
+        padding-right: 8px;
+    }
+    
+    .nav-font {
+        /* font-family: 'Grand Hotel', cursive; */
+        font-family: 'Pattaya', sans-serif;
+        font-size: 26px;
+        color: white;
+        margin-left: 1rem;
+    }
+    
+    .nav-font-sm {
+        font-size: 16px;
+    }
+    /* Media queries */
+    /* Phone - portrait mode */
+    
+    @media only screen and (max-width:320px) {
+        .nav-font {
+            font-size: 0.6rem !important;
+            margin: 0 0 0 0.5rem;
+        }
+        .logo {
+            width: 1.5rem;
+        }
+        .form-control {
+            width: 6rem;
+        }
+    }
+    /* Phone - landscape mode */
+    /* @media only screen and (max-width:768px) and (orientation:landscape) {
+        .nav-font {
+            font-size: 0.85rem !important;
+            margin: 0 0 0 0.75rem;
+        }
+        .logo {
+            width: 2rem;
+            margin: 0 1rem 0 0;
+        }
+        .form-control {
+            width: 8rem;
+        }
+    } */
+    /* Tablet - portrait mode*/
+    
+    @media only screen and (min-width:321px) and (max-width:768px) and (orientation: portrait) {
+        .nav-font {
+            font-size: 1.5rem !important;
+            margin: 0 0 0 1.5rem;
+        }
+        .logo {
+            width: 3.5rem;
+            margin: 0 1rem 0 0;
+        }
+        .form-control {
+            width: 15rem;
+        }
+    }
+    /* Desktop */
+    
+    @media only screen and (min-width:769px) {
+        .nav-font {
+            margin: 0 0 0 3rem;
+        }
+        .logo {
+            width: 4.5rem;
+            margin: 0 1rem 0 0;
+        }
+        .form-control {
+            width: 15rem;
+        }
+    }
