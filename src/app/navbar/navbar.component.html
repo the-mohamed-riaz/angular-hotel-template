@@ -1,6 +1,10 @@
-<div class="container">
+<div class="container padding-reset">
     <div class="d-flex bd-highlight d-flex flex-row align-items-center">
-        <div class="flex-grow-1 bd-highlight d-flex align-items-center"><object class="logo" data="../../assets/svg/logo.svg" type="image/svg+xml"></object></div>
+        <div class="flex-grow-1 bd-highlight d-flex align-items-center">
+            <a (click)="scrollTo('home')" class="logo navbar-brand">
+                <img src="../../assets/svg/logo.svg" alt="Go to Home page">
+            </a>
+        </div>
         <div class="bd-highlight">
             <div class="d-flex flex-row align-items-center">
                 <i class="ft-search search-icon white"></i>
@@ -10,7 +14,10 @@
             </div>
         </div>
         <div class="bd-highlight nav-font">
-            <a routerLink="bookings">Bookings</a></div>
-        <div class="bd-highlight nav-font">About Us</div>
+            <a (click)="scrollTo('bookings')" class="nav-link">Bookings</a>
+        </div>
+        <div class="bd-highlight nav-font">
+            <a (click)="scrollTo('connect')" class="nav-link">Connect</a>
+        </div>
     </div>
 </div>

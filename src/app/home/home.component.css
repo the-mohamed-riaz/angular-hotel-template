@@ -41,10 +41,6 @@
     animation-timing-function: ease-in-out;
 }
 
-.lady-anime:hover {
-    animation: none
-}
-
 .umbrella {
     position: relative;
     max-width: 350px;
@@ -134,5 +130,14 @@
         width: 25%;
         bottom: -1rem;
         right: -30%;
+    }
+}
+
+
+/* Desktop */
+
+@media only screen and (min-width:769px) {
+    .content {
+        margin: calc(3rem + 58px) 0 0 0;
     }
 }

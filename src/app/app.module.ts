@@ -7,6 +7,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { BookingsComponent } from './bookings/bookings.component';
 import { CardsComponent } from './shared/cards/cards.component';
+import { ConnectComponent } from './connect/connect.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { CardsComponent } from './shared/cards/cards.component';
     NavbarComponent,
     HomeComponent,
     BookingsComponent,
-    CardsComponent
+    CardsComponent,
+    ConnectComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

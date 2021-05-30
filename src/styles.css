@@ -18,3 +18,7 @@
 .theme-color-1 {
     color: #00B4B4;
 }
+
+.padding-reset {
+    padding: 0;
+}
