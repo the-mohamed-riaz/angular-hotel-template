@@ -1,0 +1,15 @@
+<div class="container my-5 pt-3">
+    <div class="mandella-container">
+        <object data="../../assets/svg/mandella.svg" type="image/svg+xml" class="mandella"></object>
+    </div>
+    <div class="container-fluid  d-flex justify-content-center p-5">
+        <div class="luxury-text">Enjoy your holiday reclining by a private infinity pool or a panoramic plunge pool</div>
+    </div>
+    <div class="row">
+        <ng-container *ngFor="let item of content">
+            <div class="col p-3 d-flex justify-content-center">
+                <app-cards [content]="item"></app-cards>
+            </div>
+        </ng-container>
+    </div>
+</div>
