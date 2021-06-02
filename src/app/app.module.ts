@@ -9,6 +9,8 @@ import { BookingsComponent } from './bookings/bookings.component';
 import { CardsComponent } from './shared/cards/cards.component';
 import { ConnectComponent } from './connect/connect.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ScrollUpComponent } from './scroll-up/scroll-up.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     BookingsComponent,
     CardsComponent,
-    ConnectComponent
+    ConnectComponent,
+    ScrollUpComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
